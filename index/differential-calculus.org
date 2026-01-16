@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:         differential-calculus
+:START:      2025-01-16
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     growing
+:IMPORTANCE: 8
+:PREVIEW:    Index of notes on differential calculus and limits
+:END:
+#+title: Differential Calculus
+#+filetags: :index:calculus:mathematics:
+
+* Limits
+
+- [[id:notation-of-a-limit][Notation of a Limit]]
+- [[id:when-a-limit-exists][When a Limit Exists]]
+- [[id:computing-basic-limits-direct-substitution][Computing Basic Limits - Direct Substitution]]
+- [[id:computing-limits-with-algebraic-simplification][Computing Limits with Algebraic Simplification]]
+- [[id:limit-with-difference-of-cubes][Limit with Difference of Cubes]]
+- [[id:limit-with-absolute-value-jump-discontinuity][Limit with Absolute Value - Jump Discontinuity]]
+- [[id:limit-with-absolute-value-piecewise-behavior][Limit with Absolute Value - Piecewise Behavior]]
