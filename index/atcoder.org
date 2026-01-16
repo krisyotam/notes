@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:         atcoder
+:START:      2025-01-16
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     seed
+:IMPORTANCE: 6
+:PREVIEW:    Index of AtCoder problem solutions
+:END:
+#+title: AtCoder
+#+filetags: :index:coding:competitive-programming:

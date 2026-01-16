@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:         hackerrank
+:START:      2025-01-16
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     seed
+:IMPORTANCE: 6
+:PREVIEW:    Index of HackerRank problem solutions
+:END:
+#+title: HackerRank
+#+filetags: :index:coding:competitive-programming:

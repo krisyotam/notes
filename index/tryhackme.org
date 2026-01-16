@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:         tryhackme
+:START:      2025-01-16
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     seed
+:IMPORTANCE: 6
+:PREVIEW:    Index of TryHackMe room writeups
+:END:
+#+title: TryHackMe
+#+filetags: :index:ctf:security:
+
+* Walkthrough (Guided) Rooms
+
+* CTF Rooms
+
+* Active Directory Rooms

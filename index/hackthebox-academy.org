@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:         hackthebox-academy
+:START:      2025-01-16
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     seed
+:IMPORTANCE: 6
+:PREVIEW:    Index of HackTheBox Academy module notes
+:END:
+#+title: HackTheBox Academy
+#+filetags: :index:ctf:security:

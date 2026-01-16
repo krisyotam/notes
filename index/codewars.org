@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:         codewars
+:START:      2025-01-16
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     growing
+:IMPORTANCE: 6
+:PREVIEW:    Index of CodeWars challenge solutions
+:END:
+#+title: CodeWars
+#+filetags: :index:coding:competitive-programming:
+
+* C
+
+- [[id:opposite-number-c-codewars][Opposite Number, C, CodeWars]]
+- [[id:opposites-attract-c-codewars][Opposites Attract, C, CodeWars]]
+
+* C++
+
+- [[id:clock-cpp-codewars][Clock, C++, CodeWars]]
+- [[id:roman-numerals-decoder-cpp-codewars][Roman Numerals Decoder, C++, CodeWars]]

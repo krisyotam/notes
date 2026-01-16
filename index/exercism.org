@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:         exercism
+:START:      2025-01-16
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     growing
+:IMPORTANCE: 6
+:PREVIEW:    Index of Exercism exercise solutions
+:END:
+#+title: Exercism
+#+filetags: :index:coding:competitive-programming:
+
+* C
+
+- [[id:leap-c-exercism][Leap, C, Exercism]]
+- Hello World, C, Exercism
+- Difference of Squares, C, Exercism
+- Grains, C, Exercism
+
+* C++
+
+* Bash
+
+* x86-64 Assembly

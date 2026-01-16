@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:         hackthebox
+:START:      2025-01-16
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     seed
+:IMPORTANCE: 6
+:PREVIEW:    Index of HackTheBox machine writeups
+:END:
+#+title: HackTheBox
+#+filetags: :index:ctf:security:

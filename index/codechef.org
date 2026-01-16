@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:         codechef
+:START:      2025-01-16
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     seed
+:IMPORTANCE: 6
+:PREVIEW:    Index of CodeChef problem solutions
+:END:
+#+title: CodeChef
+#+filetags: :index:coding:competitive-programming:

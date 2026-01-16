@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:         leetcode
+:START:      2025-01-16
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     seed
+:IMPORTANCE: 6
+:PREVIEW:    Index of LeetCode problem solutions
+:END:
+#+title: LeetCode
+#+filetags: :index:coding:competitive-programming:
