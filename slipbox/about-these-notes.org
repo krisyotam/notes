@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ID:       about-these-notes
+:START:    2025-01-08
+:FINISH:
+:CERTAINTY: certain
+:STATUS:    evergreen
+:IMPORTANCE: 10
+:PREVIEW:   Working notes of Kris Yotam
+:END:
+#+title: About These Notes
+#+filetags: :meta:about:zettelkasten:
+
+Hi! I'm [[https://krisyotam.com][Kris Yotam]] an Applied Researcher, and Essayist. You've made your way to my working notes. These are the notes I use to build [[https://krisyotam.com][krisyotam.com]]. If you are unfamiliar with who I am, and what I do. Or interested in my main site, and it's purpose I recommend the following expository works: [[https://krisyotam.com/notes/on-myself/about-kris][About Me]], [[https://krisyotam.com/notes/website/about-this-website][About This Website]], [[https://krisyotam.com/notes/website/design-of-this-website][Design of This Website]], and my style guide [[https://krisyotam.com/notes/manuals-of-style/takes-on-prose]["Takes On Prose"]].
+
+* What Areas of Research?
+
+You will see a lot here from popular topics like AI Alignment, LLM Ethics, Aesthetics, Epistemology, Competitive Programming, etc. to more niche topics like "Spatial Cognition and Problem-Solving in the Aye-Aye (Daubentonia madagascariensis)". You have a few options for navigation. Either utilizing the full-text search bar in the top left, expanding the grid view in the top right, or navigating via "Directories" which I have setup to map out topics.
+
+* What are Directories?
+
+Directories are the easiest way to find my notes on topics that interest you. There are several types of Directories.
+
+*Index Directories:* Index Directories are bibliographies listing all the files inside that specific "Index". A "index" is a top level topic that has many subtopics "tags". A index will be linked to both individual notes that fit that index directly, and "tags" that hold notes that fit that index indirectly or are adjacent to it.
+
+*Tag Directories:* Tag Directories are sub-directories for the larger "Indexes". They contain smaller topics for example "Marine Biology" where the larger "Index" could be "Oceanology". A "Tag" directory will still be split into several sections inside of the directory file itself.
+
+*Source Directories:* Source directories are directories for platform based, not topic based notes. For example "Film Reviews" is a example of a source directory. Another would be "LeetCode". All notes pertaining to the source will have the source linked in the front matter section "Source(s)" at the top of the note.
+
+* What are Notes?
+
+/To be developed/
+
+* Am I the Sole Maintainer?
+
+Yes, these notes are mostly written for myself. If you are interested in helping, those who have become patrons through tier 3 on patreon get invited to the private git repo. Where you able to make pull requests for changes to files. I appreciate corrections for incorrect details across notes, and other changes if you are interested in that type of thing. I thought this would be a good reward for patrons as it is the most personal form of note taking I do, and though available here in read only format it is much more personal to be able to edit notes, and help participate in my research.
+
+* Philosophy of Knowledge
+
+/To be developed/
+
+-----
+
+#+begin_quote
+My work is made possible by a crowd funded research grant from my [[https://patreon.com/krisyotam][patreon]], [[https://krisyotam.substack.com][Substack]], and misc. donations from other platforms.
+#+end_quote
+
+If you would like to support my research you can view ongoing projects [[https://krisyotam.com/projects][here]].
+
+In addition to my work here you can find my published works on [[https://krisyotam.com][krisyotam.com]].

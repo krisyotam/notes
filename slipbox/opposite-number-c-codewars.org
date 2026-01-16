@@ -10,7 +10,7 @@
 #+title: Opposite Number, C, CodeWars
 #+filetags: :c:codewars:algorithms:
 
-** ###### Problem Statement
+* Problem Statement
 :PROPERTIES:
 :CUSTOM_ID: problem-statement
 :END:
@@ -24,7 +24,7 @@ Examples:
 -34: 34
 #+end_example
 
-** ###### Chosen Solution
+* Chosen Solution
 :PROPERTIES:
 :CUSTOM_ID: chosen-solution
 :END:

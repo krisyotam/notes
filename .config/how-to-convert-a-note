@@ -1,0 +1,534 @@
+
+
+
+# Below is the example of the properties in emacs org mode each of my notes has. These properties 
+# are metadata from files used to understand them. 
+
+:PROPERTIES:
+:ID:         calculus-fundamentals
+:START:      2025-01-15
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     growing
+:IMPORTANCE: 8
+:PREVIEW:    Introduction to limits, derivatives, and integrals
+:END:
+#+title: Calculus Fundamentals
+#+filetags: :math:calculus:
+
+# This is the template fully blank. 
+
+:PROPERTIES: 
+:ID:   
+:START:    
+:FINISH:
+:CERTAINTY: 
+:STATUS:     
+:IMPORTANCE: 
+:PREVIEW:    
+:END:
+#+title: 
+#+filetags: 
+
+
+Here. A blunt conversion guide between **Markdown (.md)** and **Org mode (.org)**, with **separate sections** and a **comment that explains what it is**. Humans really did invent two mostly-identical plain-text formats and then argued about them for decades.
+
+---
+
+## 1) Headings
+
+# Comment: Document structure (sections/subsections).
+
+**Markdown**
+
+```md
+# Title
+## Section
+### Subsection
+#### Subsubsection
+```
+
+**Org**
+
+```org
+* Title
+** Section
+*** Subsection
+**** Subsubsection
+```
+
+**Convert**
+
+* `#` → `*`
+* `##` → `**`
+* etc. (same depth, different symbol)
+
+---
+
+## 2) Paragraphs and Line Breaks
+
+# Comment: Plain text blocks; how “new lines” behave.
+
+**Markdown**
+
+* New paragraph = blank line.
+* Single newline is usually ignored (depends on renderer).
+* Hard break: end line with two spaces or use `<br>`.
+
+```md
+Line one  
+Line two
+```
+
+**Org**
+
+* New paragraph = blank line.
+* A single newline is usually a newline (but export can reflow).
+* Hard break: use `\\` at end of line in some exports, or just keep line breaks.
+
+```org
+Line one\\
+Line two
+```
+
+**Convert**
+
+* Keep blank lines the same.
+* Replace Markdown’s two-space hard break with Org `\\` only if you truly need forced breaks on export.
+
+---
+
+## 3) Bold / Italic / Underline / Strike
+
+# Comment: Inline emphasis.
+
+**Markdown**
+
+```md
+**bold**
+*italic*
+~~strikethrough~~
+```
+
+**Org**
+
+```org
+*bold*
+/italic/
++strikethrough+
+_underline_
+```
+
+**Convert**
+
+* `**bold**` → `*bold*`
+* `*italic*` or `_italic_` → `/italic/`
+* `~~strike~~` → `+strike+`
+* Underline isn’t standard in Markdown, but in Org it’s `_underline_`.
+
+---
+
+## 4) Inline Code
+
+# Comment: Mark text as code inline.
+
+**Markdown**
+
+```md
+Use `printf()` here
+```
+
+**Org**
+
+```org
+Use =printf()= here
+```
+
+**Convert**
+
+* `` `code` `` → `=code=`
+* Org also supports `~code~` for code-ish style; `=` is the usual.
+
+---
+
+## 5) Code Blocks (fenced)
+
+# Comment: Multi-line code with an optional language tag.
+
+**Markdown**
+
+````md
+```python
+print("hi")
+````
+
+````
+
+**Org**
+```org
+#+begin_src python
+print("hi")
+#+end_src
+````
+
+**Convert**
+
+* ```lang → `#+begin_src lang`
+* ``` → `#+end_src`
+
+---
+
+## 6) Blockquotes
+
+# Comment: Quoted text / callouts.
+
+**Markdown**
+
+```md
+> quoted line
+> another line
+```
+
+**Org**
+
+```org
+#+begin_quote
+quoted line
+another line
+#+end_quote
+```
+
+**Convert**
+
+* `>` blocks → `#+begin_quote ... #+end_quote`
+
+---
+
+## 7) Lists (unordered / ordered)
+
+# Comment: Bullet and numbered lists.
+
+**Markdown**
+
+```md
+- a
+  - nested
+* also works in some renderers
+
+1. one
+2. two
+```
+
+**Org**
+
+```org
+- a
+  - nested
+
+1. one
+2. two
+```
+
+**Convert**
+
+* Mostly identical.
+* Org nesting is indentation-based like Markdown.
+
+---
+
+## 8) Task Lists / Checkboxes
+
+# Comment: Track tasks and completion states.
+
+**Markdown**
+
+```md
+- [ ] todo
+- [x] done
+```
+
+**Org**
+
+```org
+- [ ] todo
+- [X] done
+```
+
+**Convert**
+
+* Same concept, Org prefers `X` but accepts `x` in practice.
+
+---
+
+## 9) Org TODO keywords (extra power)
+
+# Comment: Org has built-in task states beyond checkboxes.
+
+**Org**
+
+```org
+* TODO Write draft
+* NEXT Edit
+* DONE Publish
+```
+
+**Markdown equivalent**
+
+* No native standard. People fake it with text or checkboxes.
+
+**Convert**
+
+* If your Markdown has conventions like `- [ ]` under a heading, you can optionally elevate to Org’s `* TODO` headings.
+
+---
+
+## 10) Links
+
+# Comment: Clickable references.
+
+**Markdown**
+
+```md
+[text](https://example.com)
+https://example.com
+```
+
+**Org**
+
+```org
+[[https://example.com][text]]
+[[https://example.com]]
+```
+
+**Convert**
+
+* `[text](url)` → `[[url][text]]`
+* bare URL → `[[url]]` (optional; Org auto-detects many URLs anyway)
+
+---
+
+## 11) Images
+
+# Comment: Embedded images (display varies by editor/export).
+
+**Markdown**
+
+```md
+![alt text](./img.png)
+```
+
+**Org**
+
+```org
+[[./img.png]]
+```
+
+**Convert**
+
+* `![alt](path)` → `[[path]]`
+* Org doesn’t store “alt text” the same way; if you care, add a caption:
+
+```org
+#+caption: alt text
+[[./img.png]]
+```
+
+---
+
+## 12) Horizontal Rules
+
+# Comment: Section breaks.
+
+**Markdown**
+
+```md
+---
+```
+
+**Org**
+
+```org
+-----
+```
+
+**Convert**
+
+* `---` → `-----` (Org tends to like 5+ dashes)
+
+---
+
+## 13) Tables
+
+# Comment: Structured data tables.
+
+**Markdown**
+
+```md
+| a | b |
+|---|---|
+| 1 | 2 |
+```
+
+**Org**
+
+```org
+| a | b |
+|---+---|
+| 1 | 2 |
+```
+
+**Convert**
+
+* Replace the separator row `|---|---|` with `|---+---|` style.
+* Org also supports alignment lines and spreadsheet-like formulas.
+
+---
+
+## 14) Footnotes
+
+# Comment: References/endnotes.
+
+**Markdown (common style)**
+
+```md
+This is a claim.[^1]
+
+[^1]: Footnote text.
+```
+
+**Org**
+
+```org
+This is a claim.[fn:1]
+
+[fn:1] Footnote text.
+```
+
+**Convert**
+
+* `[^1]` → `[fn:1]`
+* `[^1]: ...` → `[fn:1] ...`
+
+---
+
+## 15) “Callouts” / Admonitions
+
+# Comment: Notes, warnings, tips. Markdown has many dialects; Org uses blocks.
+
+**Markdown (varies by engine)**
+
+```md
+> [!NOTE]
+> Something important.
+```
+
+**Org**
+
+```org
+#+begin_quote
+NOTE: Something important.
+#+end_quote
+```
+
+**Convert**
+
+* There’s no single universal mapping; simplest is quote blocks with labels.
+* If you export with Org to HTML/LaTeX, you can also use special blocks:
+
+```org
+#+begin_note
+Something important.
+#+end_note
+```
+
+(Works depending on your exporter/setup.)
+
+---
+
+## 16) Frontmatter / Metadata
+
+# Comment: Markdown often uses YAML frontmatter; Org uses `#+KEY:` lines.
+
+**Markdown**
+
+```md
+---
+title: My Note
+tags: [a, b]
+date: 2026-01-16
+---
+```
+
+**Org**
+
+```org
+#+title: My Note
+#+date: 2026-01-16
+#+filetags: :a:b:
+```
+
+**Convert**
+
+* `title` → `#+title:`
+* `date` → `#+date:`
+* `tags` → `#+filetags: :a:b:`
+
+---
+
+## 17) Comments
+
+# Comment: Hidden notes not meant for export.
+
+**Markdown**
+
+* No real standard. Some use HTML:
+
+```md
+<!-- comment -->
+```
+
+**Org**
+
+```org
+# comment
+# Another comment line
+```
+
+**Convert**
+
+* `<!-- ... -->` → `# ...` (one-line) or multiple `#` lines.
+
+---
+
+## 18) Quick “Specific Thing” Conversions Cheat Sheet
+
+# Comment: Copy/paste mapping list for common edits.
+
+* `# Heading` → `* Heading`
+* `## Heading` → `** Heading`
+* `**bold**` → `*bold*`
+* `*italic*` → `/italic/`
+* `` `code` `` → `=code=`
+* `~~strike~~` → `+strike+`
+* `lang … ` → `#+begin_src lang … #+end_src`
+* `> quote` → `#+begin_quote … #+end_quote`
+* `[text](url)` → `[[url][text]]`
+* `![alt](img.png)` → `#+caption: alt` + `[[img.png]]`
+* `[^1]` → `[fn:1]`
+* `---` → `-----`
+* Markdown YAML frontmatter → `#+title:`, `#+date:`, `#+filetags:`
+
+---
+
+## 19) Pitfalls That Bite People (so you don’t)
+
+# Comment: Things that break when you “mechanically” convert.
+
+* Org emphasis markers (like `*bold*`) can fail if they touch letters/punctuation weirdly; add spaces if needed.
+* Nested lists + code blocks: Org wants code blocks aligned under list indentation if they’re “inside” a list item.
+* Markdown links inside parentheses sometimes look uglier in Org; it’s normal.
+* Markdown “callouts” are not standardized; expect manual cleanup.
+
+---
+
+If you want, paste a small Markdown sample (like 30–80 lines) and I’ll convert it to Org cleanly in one go, including tags/title/footnotes, without doing the “well it depends” dance.

@@ -24,7 +24,7 @@ If they differ, the two-sided limit *does not exist* (DNE).
 This is common at jump discontinuities or in absolute value functions
 where behavior changes depending on direction.
 
-** ###### Related To This Note
+* Related To This Note
 :PROPERTIES:
 :CUSTOM_ID: related-to-this-note
 :END:

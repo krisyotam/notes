@@ -10,7 +10,7 @@
 #+title: Roman Numerals Decoder, C++, Codewars
 #+filetags: :cpp:codewars:algorithms:
 
-** ###### Problem Statement
+* Problem Statement
 :PROPERTIES:
 :CUSTOM_ID: problem-statement
 :END:
@@ -25,7 +25,7 @@ skipping any 0s. So 1990 is rendered "MCMXC" (1000 = M, 900 = CM, 90 =
 XC) and 2008 is rendered "MMVIII" (2000 = MM, 8 = VIII). The Roman
 numeral for 1666, "MDCLXVI", uses each letter in descending order.
 
-****** Example:
+* Example:
 :PROPERTIES:
 :CUSTOM_ID: example
 :END:
@@ -39,7 +39,7 @@ numeral for 1666, "MDCLXVI", uses each letter in descending order.
 "I"       ->    1
 #+end_example
 
-****** Help:
+* Help:
 :PROPERTIES:
 :CUSTOM_ID: help
 :END:
@@ -54,7 +54,7 @@ D          500
 M          1,000
 #+end_example
 
-** ###### Solving Process
+* Solving Process
 :PROPERTIES:
 :CUSTOM_ID: solving-process
 :END:
@@ -123,8 +123,9 @@ the for loop exists.
 return finalSolution;
 #+end_src
 
-Below is the final solution to "Roman Numerals Decoder" in C++ ######
-Solution ---
+Below is the final solution to "Roman Numerals Decoder" in C++
+
+* Solution
 
 #+begin_src cpp
 /********************************************

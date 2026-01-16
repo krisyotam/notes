@@ -1,0 +1,65 @@
+:PROPERTIES:
+:ID:       close-reading-hope-is-the-thing-with-feathers
+:START:    2025-01-08
+:FINISH:
+:CERTAINTY: likely
+:STATUS:    growing
+:IMPORTANCE: 5
+:PREVIEW:   A close reading of Emily Dickinson's "Hope" is the thing with feathers
+:END:
+#+title: Close Reading: Hope is the Thing with Feathers
+#+filetags: :poetry:emily-dickinson:close-reading:literature:
+
+*Index:* Close Reading Verse
+*Source:* Emily Dickinson
+
+#+begin_src text
+"Hope" is the thing with feathers -
+That perches in the soul -
+And sings the tune without the words -
+And never stops - at all -
+
+And sweetest - in the Gale - is heard -
+And sore must be the storm -
+That could abash the little Bird
+That kept so many warm -
+
+I've heard it in the chillest land -
+And on the strangest Sea -
+Yet - never - in Extremity,
+It asked a crumb - of me.
+#+end_src
+
+* Synopsis
+
+"Hope" is the thing with feathers" is a short lyric poem by *Emily Dickinson*, written around *1861* during a particularly productive period of her life. At the time, Dickinson was in her early thirties and entering what scholars often call her "facile" period, when she was intensely focused on writing poetry in solitude, often binding her poems into homemade booklets.
+
+* Cultural Background
+
+Written Circa 1861, published Posthumously in 1891 it was written during a period that Dickinson had begun to withdraw from her social life and focus inward. This was the beginning of her most prolific writing phase (1861-1865), during which she wrote nearly 800 poems. The U.S. Civil War had just begun, and still Dickinson kept her focus internal and personal.
+
+* Thematic Breakdown (Stanza by Stanza)
+
+In stanza one we are introduced to the concept "Hope" in which it is allegorically represented as a bird.
+
+#+begin_src text
+"Hope" is the thing with feathers -
+That perches in the soul -
+#+end_src
+
+"Hope" is said to be "the thing with feathers", that represents freedom. Carrying itself above the poppycock of societal conditioning, and fear mongering. It "perches in the soul", when a bird is perching it is comfortable, at rest. Even so the act of perching is still temporary.
+
+#+begin_src text
+And sings the tune without the words -
+And never stops - at all -
+#+end_src
+
+"sings the tune without the words" here Emily conveys a concept known as [[https://en.wikipedia.org/wiki/Emotional_contagion][Emotional Contagion]]. A concept known to affect both people, and animals. Wikipedia describes the process as this:
+
+#+begin_quote
+Hatfield, et al., theorize emotional contagion as a two-step process: First, we imitate people (e.g., if someone smiles at you, you smile back). Second, our own emotional experiences change based on the non-verbal signals of emotion that we give off. For example, smiling makes one feel happier, and frowning makes one feel worse. Mimicry seems to be one foundation of emotional movement between people.
+#+end_quote
+
+* Literary Breakdown (Stylistic Choices)
+
+/To be developed/

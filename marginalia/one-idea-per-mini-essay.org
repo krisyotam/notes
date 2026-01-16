@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       one-idea-per-mini-essay
+:START:    2025-01-08
+:FINISH:
+:CERTAINTY: certain
+:STATUS:    growing
+:IMPORTANCE: 7
+:PREVIEW:   Breakdown of the structure of a mini-essay/atomic-note
+:END:
+#+title: One Idea Per Mini-Essay
+#+filetags: :note-taking:zettelkasten:writing:
+
+*Topic:* Note Taking
+*Tags:* Zettelkasten
+
+When trying to connect to several themes in order to explain a single thought. You increase the complexity of that specific topic by several orders of magnitude. You or the reader must now learn or refresh yourself on various different fields of information to coalesce and form a coherent picture. In order to avoid this complexity we ought to keep a mini essay focused on one idea. Try to isolate that idea as much as possible.
+
+A example of this utilizing the topic at hand would like this:
+
+* Narrowed Focus
+
+A mini essay should focus on one idea, try not to say too much at once. It kills clarity.
+
+* Broad Focus
+
+A mini essay is a condensed epistemological artifact, requiring synthesis of cognitive fragmentation, aesthetic coherence, and the recursive interplay between semantic precision and conceptual emergence.
+
+As you can see one is a clear to the point explanation of a mini-essay, the other word salad meant to make one appear intelligent rather than convey a clear point.
+
+* Related Notes
+
+- [[file:keep-mini-essays-short.org][Keep Mini-Essays Short]]

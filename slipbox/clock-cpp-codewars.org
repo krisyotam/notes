@@ -10,7 +10,7 @@
 #+title: Clock, C++, CodeWars
 #+filetags: :cpp:codewars:algorithms:
 
-** ###### Problem Statement
+* Problem Statement
 :PROPERTIES:
 :CUSTOM_ID: problem-statement
 :END:
@@ -37,7 +37,7 @@ result = 61000
 0 <= s <= 59
 #+end_example
 
-** ###### Solving Process
+* Solving Process
 :PROPERTIES:
 :CUSTOM_ID: solving-process
 :END:
@@ -65,7 +65,7 @@ so
 return Total;
 #+end_src
 
-** ###### Solution
+* Solution
 :PROPERTIES:
 :CUSTOM_ID: solution
 :END:

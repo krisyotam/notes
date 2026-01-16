@@ -10,7 +10,7 @@
 #+title: Opposites Attract, C, CodeWars
 #+filetags: :c:codewars:algorithms:
 
-** ###### Problem Statement
+* Problem Statement
 :PROPERTIES:
 :CUSTOM_ID: problem-statement
 :END:
@@ -20,7 +20,7 @@ Timmy & Sarah think they are in love, but around where they live, they will only
 Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
 #+end_example
 
-** ###### Chosen Solution
+* Chosen Solution
 :PROPERTIES:
 :CUSTOM_ID: chosen-solution
 :END:
@@ -84,7 +84,8 @@ bool lovefunc(int f1, int f2) { // take in variables for the amounts of flowers
 #+end_src
 
 [[https://www.codewars.com/kata/reviews/60907e8ca75c05000185984c/groups/68aa5955b0a925556d3f92be][Link
-To Solution on CodeWars]] ###### Solution #2 (return boolean expression
+To Solution on CodeWars]] 
+* Solution #2 (return boolean expression
 directly) In this solution we take advantage of the integer properties
 discussed earlier and deal directly with the sum of numbers, and return
 true or false based on whether it is odd or even.
@@ -100,7 +101,7 @@ bool lovefunc(int f1, int f2) {
 }
 #+end_src
 
-****** Solution #3
+* Solution #3
 :PROPERTIES:
 :CUSTOM_ID: solution-3
 :END:

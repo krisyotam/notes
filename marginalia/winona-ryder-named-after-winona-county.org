@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       winona-ryder-named-after-winona-county
+:START:    2025-01-08
+:FINISH:
+:CERTAINTY: certain
+:STATUS:    growing
+:IMPORTANCE: 3
+:PREVIEW:   The origin of Winona Ryder's name
+:END:
+#+title: Winona Ryder Was Named After Winona County
+#+filetags: :film:trivia:winona-ryder:
+
+*Source:* Winona Ryder
+
+* Born Winona Laura Horowitz
+
+The name *Winona* was inspired by Winona, Minnesota. This is because her birthplace is Winona County.

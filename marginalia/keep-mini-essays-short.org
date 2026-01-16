@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       keep-mini-essays-short
+:START:    2025-01-08
+:FINISH:
+:CERTAINTY: certain
+:STATUS:    growing
+:IMPORTANCE: 6
+:PREVIEW:   On the importance of brevity in atomic notes
+:END:
+#+title: Keep Mini-Essays Short
+#+filetags: :note-taking:zettelkasten:writing:
+
+*Topic:* Note Taking
+*Tags:* Zettelkasten
+
+/To be developed/
+
+* Related Notes
+
+- [[file:one-idea-per-mini-essay.org][One Idea Per Mini-Essay]]
