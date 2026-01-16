@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:         notation-of-a-limit
+:START:      2025-01-15
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     evergreen
+:IMPORTANCE: 7
+:PREVIEW:    Definition and notation for limits in calculus
+:END:
+#+title: Notation of a Limit
+#+filetags: :calculus:limits:
+
+A limit describes what a function approaches as the input gets close to
+a certain value. It's written as:
+$$
+\lim_{x \to a} f(x) = L
+$$
+This reads: "The limit of $f(x)$ as $x$ approaches $a$ is $L$."
+
+Formally, it means: for every $\epsilon > 0$, there exists a
+$\delta > 0$ such that if $0 < |x - a| < \delta$, then
+$|f(x) - L| < \epsilon$.\\
+This $\epsilon$-$\delta$ definition is the rigorous foundation of
+limits, though intuitive understanding comes first.
+
+Limits let us talk about function behavior near a point---even if
+$f(a)$ is undefined. They are critical to defining continuity and
+derivatives.

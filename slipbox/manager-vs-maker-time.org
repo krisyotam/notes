@@ -1,0 +1,126 @@
+:PROPERTIES:
+:ID:         manager-vs-maker-time
+:START:      2025-01-15
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     growing
+:IMPORTANCE: 6
+:PREVIEW:    Distinction between manager and maker schedules for productivity
+:END:
+#+title: Manager vs. Maker Time
+#+filetags: :productivity:time-management:
+
+| Column A | Column C | Column B |
+|----------+----------+----------|
+| Item 1   | Item 3   | Item 2   |
+| Item 4   | Item 6   | Item 5   |
+
+#+begin_html
+  <table style="width:100%; border-collapse: collapse;">
+#+end_html
+
+#+begin_html
+  <thead>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <th style="width:25%; text-align:left; border-bottom:1px solid #ccc; padding:6px;">
+#+end_html
+
+Term
+
+#+begin_html
+  </th>
+#+end_html
+
+#+begin_html
+  <th style="width:75%; text-align:left; border-bottom:1px solid #ccc; padding:6px;">
+#+end_html
+
+Definition
+
+#+begin_html
+  </th>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  </thead>
+#+end_html
+
+#+begin_html
+  <tbody>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td style="vertical-align:top; padding:6px;">
+#+end_html
+
+Zeigarnik Effect
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td style="padding:6px;">
+#+end_html
+
+The tendency to remember unfinished or interrupted tasks better than
+completed ones, due to unresolved cognitive tension.
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td style="vertical-align:top; padding:6px;">
+#+end_html
+
+Context Switching
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td style="padding:6px;">
+#+end_html
+
+The mental cost incurred when shifting attention between tasks, reducing
+efficiency and increasing error rates.
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  </tbody>
+#+end_html
+
+#+begin_html
+  </table>
+#+end_html

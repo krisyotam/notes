@@ -1,0 +1,170 @@
+:PROPERTIES:
+:ID:         roman-numerals-decoder-cpp-codewars
+:START:      2025-01-15
+:FINISH:
+:CERTAINTY:  certain
+:STATUS:     evergreen
+:IMPORTANCE: 6
+:PREVIEW:    CodeWars solution for decoding Roman numerals in C++
+:END:
+#+title: Roman Numerals Decoder, C++, Codewars
+#+filetags: :cpp:codewars:algorithms:
+
+** ###### Problem Statement
+:PROPERTIES:
+:CUSTOM_ID: problem-statement
+:END:
+Create a function that takes a Roman numeral as its argument and returns
+its value as a numeric decimal integer. You don't need to validate the
+form of the Roman numeral.
+
+[[https://en.wikipedia.org/wiki/Roman_numerals#Standard_form][Modern
+Roman numerals]] are written by expressing each decimal digit of the
+number to be encoded separately, starting with the leftmost digit and
+skipping any 0s. So 1990 is rendered "MCMXC" (1000 = M, 900 = CM, 90 =
+XC) and 2008 is rendered "MMVIII" (2000 = MM, 8 = VIII). The Roman
+numeral for 1666, "MDCLXVI", uses each letter in descending order.
+
+****** Example:
+:PROPERTIES:
+:CUSTOM_ID: example
+:END:
+#+begin_example
+"MM"      -> 2000
+"MDCLXVI" -> 1666
+"M"       -> 1000
+"CD"      ->  400
+"XC"      ->   90
+"XL"      ->   40
+"I"       ->    1
+#+end_example
+
+****** Help:
+:PROPERTIES:
+:CUSTOM_ID: help
+:END:
+#+begin_example
+Symbol    Value
+I          1
+V          5
+X          10
+L          50
+C          100
+D          500
+M          1,000
+#+end_example
+
+** ###### Solving Process
+:PROPERTIES:
+:CUSTOM_ID: solving-process
+:END:
+Immediately the first thing we realize is that we will have to map each
+symbol to a numerical value, and make sure value pairs are properly
+handled such as IX, where the previous symbol makes this a pair I = 1, X
+= 10, 10 - 1 = 9. First things first to handle the value pairs I chose
+to use a unordered map.
+
+#+begin_src cpp
+unordered_map<char, int> roman_map = {
+      {'I', 1},
+      {'V', 5},
+      {'X', 10},
+      {'L', 50},
+      {'C', 100},
+      {'D', 500},
+      {'M', 1000}
+    };
+#+end_src
+
+This sets the proper numerical value for any numeral. Next we declare
+the variable final Solution and set it to 0. This is the variable that
+as you can infer will hold our answer.
+
+#+begin_src cpp
+int finalSolution = 0;
+#+end_src
+
+Next we are going to initialize a for loop to go symbol by symbol in the
+string we are passed. However since strings in C++ are *iterable* I find
+it best to think of them as an array. This is a good mental model to
+have when approaching a problem like this. For example 'MDCLXVI' can be
+visualized as so:
+
+#+begin_src cpp
+"MDCLXVI" → ['M', 'D', 'C', 'L', 'X', 'V', 'I']
+#+end_src
+
+Here is the for loop
+
+#+begin_src cpp
+for (int i = 0; i < roman.length(); i++) { }
+#+end_src
+
+Next is our core logic. We are going to define a if statement to take
+care of the two cases. Normal Additive, or a Subtractive Pair. Our if
+statement will test for a subtractive pair, and if it is determined to
+be one it will subtract. If it is not one it will go through the else
+statement and add as a Normal Additive.
+
+#+begin_src cpp
+  for (int i = 0; i < roman.length(); i++) {
+      if (roman_map[roman[i]] < (i + 1 < roman.length() ? roman_map[roman[i + 1]] : 0)) {
+        finalSolution -= roman_map[roman[i]];
+      } else {
+        finalSolution += roman_map[roman[i]];
+      }
+  }
+#+end_src
+
+Now our last step is to simply return our completed finalSolution once
+the for loop exists.
+
+#+begin_src cpp
+return finalSolution;
+#+end_src
+
+Below is the final solution to "Roman Numerals Decoder" in C++ ######
+Solution ---
+
+#+begin_src cpp
+/********************************************
+,*                                           *
+,* Title: Roman Numerals Decoder             *
+,* Author: krisyotam                         *
+,* Date: 2025-07-20                          *
+,*                                           *
+,*********************************************/
+
+#include <iostream>
+#include <string>
+#include <unordered_map>
+
+using namespace std;
+
+
+int solution(string roman) { 
+      unordered_map<char, int> roman_map = {
+      {'I', 1},
+      {'V', 5},
+      {'X', 10},
+      {'L', 50},
+      {'C', 100},
+      {'D', 500},
+      {'M', 1000}
+    };
+  
+  int finalSolution = 0;
+  
+  for (int i = 0; i < roman.length(); i++) {
+      if (roman_map[roman[i]] < (i + 1 < roman.length() ? roman_map[roman[i + 1]] : 0)) {
+        finalSolution -= roman_map[roman[i]];
+      } else {
+        finalSolution += roman_map[roman[i]];
+      }
+  }
+  return finalSolution;
+}
+#+end_src
+
+[[https://www.codewars.com/kata/reviews/59d40d7867cabde815002a6e/groups/687d55842599db2d87775fe8][Link
+To Solution on CodeWars]]

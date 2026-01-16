@@ -1,0 +1,91 @@
+:PROPERTIES:
+:ID:         clock-cpp-codewars
+:START:      2025-01-15
+:FINISH:
+:CERTAINTY:  certain
+:STATUS:     evergreen
+:IMPORTANCE: 6
+:PREVIEW:    CodeWars solution for time to milliseconds conversion in C++
+:END:
+#+title: Clock, C++, CodeWars
+#+filetags: :cpp:codewars:algorithms:
+
+** ###### Problem Statement
+:PROPERTIES:
+:CUSTOM_ID: problem-statement
+:END:
+Clock shows =h= hours, =m= minutes and =s= seconds after midnight.
+
+Your task is to write a function which returns the time since midnight
+in milliseconds.
+
+*Example:*
+
+#+begin_example
+h = 0
+m = 1
+s = 1
+
+result = 61000
+#+end_example
+
+*Input constraints:*
+
+#+begin_example
+0 <= h <= 23
+0 <= m <= 59
+0 <= s <= 59
+#+end_example
+
+** ###### Solving Process
+:PROPERTIES:
+:CUSTOM_ID: solving-process
+:END:
+Upon viewing the problem we know that we need to convert the hours,
+minutes, and seconds into milliseconds. This means we need to have the
+number for how many milliseconds constitute a hour, minute, and second.
+This way we can multiply the amount of [unit of time] by [number of
+milliseconds per I that unit]. The conversion for the units are as
+follows. - Hour = 3,600,000 - Minute = 60,000 - Second = 1,000
+
+now that we know the units for conversion, and how to convert hours,
+minutes, and seconds. The next step is to get the total. In order to
+calculate the total we must add the total amount of milliseconds
+together after each has been converted, and we will save this inside a
+int type variable =Total= .
+
+#+begin_src C
+int Total = h * 3600000 + m * 60000 + s * 1000;
+#+end_src
+
+After this we just want to return the total of "Total". Which we do like
+so
+
+#+begin_src C
+return Total;
+#+end_src
+
+** ###### Solution
+:PROPERTIES:
+:CUSTOM_ID: solution
+:END:
+#+begin_src cpp
+/********************************************
+,*
+,* Title: Clock
+,* Author: krisyotam
+,* Date: 2025-07-20
+,*
+,*
+,*********************************************/
+
+using namespace std;
+
+int past(int h, int m, int s) {
+  int Total = h * 3600000 + m * 60000 + s * 1000;
+  return Total;
+}
+#+end_src
+
+[[https://www.codewars.com/kata/reviews/5e51410a6971ed00018f1498/groups/687ccfc552816cd73e972e09][Link
+To Solution on CodeWars]]

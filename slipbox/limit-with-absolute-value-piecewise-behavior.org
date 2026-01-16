@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:         limit-with-absolute-value-piecewise-behavior
+:START:      2025-01-15
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     evergreen
+:IMPORTANCE: 7
+:PREVIEW:    Analyzing limits involving absolute value piecewise behavior
+:END:
+#+title: Limit with Absolute Value - Piecewise Behavior
+#+filetags: :calculus:limits:

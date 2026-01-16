@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID:         leap-c-exercism
+:START:      2025-01-15
+:FINISH:
+:CERTAINTY:  certain
+:STATUS:     evergreen
+:IMPORTANCE: 6
+:PREVIEW:    Exercism leap year solution using Gregorian calendar rules in C
+:END:
+#+title: Leap, C, Exercism
+#+filetags: :c:exercism:algorithms:
+
+#+begin_src C
+/************************************************************
+ ,*                                                          *
+ ,*  Filename: leap.c                                        *
+ ,*  Author:   krisyotam                                     *
+ ,*  Date:     2024-12-18                                    *
+ ,*                                                          *
+ ,*  Description:                                            *
+ ,*  This program determines whether a given year is a leap  *
+ ,*  year based on the rules of the Gregorian calendar.      *
+ ,*                                                          *
+ ,*                                                          *
+ ,*  Usage:                                                  *
+ ,*  Call the leap_year() function with a year as input, and *
+ ,*  it will return true if the year is a leap year, or      *
+ ,*  false if it is not.                                     *
+ ,*                                                          *
+ ,*                                                          *
+ ,*  Notes:                                                  *
+ ,*  This function checks for leap years based on the rules  *
+ ,*  of divisibility by 4, 100, and 400.                     *
+ ,*                                                          *
+ ,*  Test runs code in its own main file                     *
+ ,*                                                          *
+ ,************************************************************/
+
+#include "leap.h"
+#include <stdbool.h>
+
+bool leap_year(int year) {
+    return (year % 4 == 0) && (year % 100 != || year % 400 == 0);
+}
+#+end_src

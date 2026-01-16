@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:         limit-with-difference-of-cubes
+:START:      2025-01-15
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     evergreen
+:IMPORTANCE: 7
+:PREVIEW:    Evaluating limits using the difference of cubes identity
+:END:
+#+title: Limit with Difference of Cubes
+#+filetags: :calculus:limits:
+
+When evaluating a limit like $\frac{x^3 - a^3}{x - a}$, use the
+*difference of cubes identity*:
+$$
+x^3 - a^3 = (x - a)(x^2 + ax + a^2)
+$$
+*Example:* \[
+\lim_{x \to 2} \frac{x^3 - 8}{x - 2}
+$$
+1. Recognize $8 = 2^3$
+2. Apply identity: \[
+   \frac{(x - 2)(x^2 + 2x + 4)}{x - 2}
+$$
+3. Cancel $x - 2$
+4. Evaluate at $x = 2$:\\
+   $4 + 4 + 4 = 12$
+
+This method avoids undefined division and simplifies the expression
+cleanly.

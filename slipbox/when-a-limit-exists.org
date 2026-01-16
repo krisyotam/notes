@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:         when-a-limit-exists
+:START:      2025-01-15
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     evergreen
+:IMPORTANCE: 7
+:PREVIEW:    Conditions for a limit to exist (left and right limits must agree)
+:END:
+#+title: When a Limit Exists
+#+filetags: :calculus:limits:
+
+A limit $\lim_{x \to a} f(x) = L$ exists only if the function
+approaches the same value from both sides:
+$$
+\lim_{x \to a^-} f(x) = L \quad \text{and} \quad \lim_{x \to a^+} f(x) = L
+$$
+- The *left-hand limit* ($x \to a^-$) looks at values from the left
+- The *right-hand limit* ($x \to a^+$) looks at values from the right
+
+If these two limits agree, the two-sided limit exists.\\
+If they differ, the two-sided limit *does not exist* (DNE).
+
+This is common at jump discontinuities or in absolute value functions
+where behavior changes depending on direction.
+
+** ###### Related To This Note
+:PROPERTIES:
+:CUSTOM_ID: related-to-this-note
+:END:
+| Note                    | Summary              |
+|-------------------------+----------------------|
+| [[Notation of a Limit]] | notation for a limit |

@@ -1,0 +1,106 @@
+:PROPERTIES:
+:ID:         opposites-attract-c-codewars
+:START:      2025-01-15
+:FINISH:
+:CERTAINTY:  certain
+:STATUS:     evergreen
+:IMPORTANCE: 6
+:PREVIEW:    CodeWars solution using XOR for odd/even comparison in C
+:END:
+#+title: Opposites Attract, C, CodeWars
+#+filetags: :c:codewars:algorithms:
+
+** ###### Problem Statement
+:PROPERTIES:
+:CUSTOM_ID: problem-statement
+:END:
+#+begin_example
+Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
+
+Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
+#+end_example
+
+** ###### Chosen Solution
+:PROPERTIES:
+:CUSTOM_ID: chosen-solution
+:END:
+My chosen solution for this problem is to go with XOR. Since we are
+comparing odd/even. Under the properties of integers we know
+
+#+begin_example
+Even + Even = Even
+Odd + Odd = Even
+Even + Odd = Odd
+#+end_example
+
+Therefor the only condition that satisfies for Timmy & Sarah to be in
+love would be for the total to be Odd. Knowing this we can forget about
+the inputs and compare totals. I will show this in a later solution.
+However for my final solution I have chosen a much more compact, and
+simple method of going about this. Using XOR we can compare the last
+bits of a number translated into binary (base 2) as so.
+
+#+begin_example
+6 --> 0110
+3 --> 0011
+#+end_example
+
+Just like in base 10 how can find out if a number is odd or even based
+on the last digit's divisibility by 10, we can do the same with last
+digits here with divisibility by 2. In other words if the last bit is
+=0=, the number is made of only 2, 4, 8, ect. --> it's divisible by 2
+--> *even*. If the last bit is =1=, the number is 1, 3, 5, 7, 9. The
+operator for this comparison is this:
+
+#+begin_example
+(f1 ^ f2) & 1
+#+end_example
+
+The first part is responsible for providing a bit by bit comparison of
+the binary number
+
+#+begin_example
+(f1 ^ f2)
+#+end_example
+
+The remaining part is what strips away the result to leave only the last
+bit. If the final result is 1 we know that the last digits differ, and
+thus 1 is odd the other is even giving us boolean true, and the opposite
+0 giving us false.
+
+#+begin_src C
+/************************************************************
+,*                                                           *
+,* Title: Opposites Attract                                  *
+,* Author: krisyotam                                         * 
+,* Date: 2025-08-23                                          *
+,* Writeup: notes.krisyotam.com/opposites-attract-c-codewars *
+,*                                                           *
+,*************************************************************/
+
+bool lovefunc(int f1, int f2) { // take in variables for the amounts of flowers
+  return (f1 ^ f2) & 1;
+}
+#+end_src
+
+[[https://www.codewars.com/kata/reviews/60907e8ca75c05000185984c/groups/68aa5955b0a925556d3f92be][Link
+To Solution on CodeWars]] ###### Solution #2 (return boolean expression
+directly) In this solution we take advantage of the integer properties
+discussed earlier and deal directly with the sum of numbers, and return
+true or false based on whether it is odd or even.
+
+#+begin_src C
+bool lovefunc(int f1, int f2) { 
+    if ((f1 + f2) % 2 == 1){ 
+        return true; 
+    } else { 
+        return false; 
+    } 
+
+}
+#+end_src
+
+****** Solution #3
+:PROPERTIES:
+:CUSTOM_ID: solution-3
+:END:

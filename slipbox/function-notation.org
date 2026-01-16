@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:         function-notation
+:START:      2025-01-15
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     evergreen
+:IMPORTANCE: 7
+:PREVIEW:    Understanding f(x) notation and how functions map inputs to outputs
+:END:
+#+title: Function Notation
+#+filetags: :algebra:functions:
+
+Function notation is a shorthand way to describe how a function maps
+inputs to outputs.
+
+The expression $f(x)$ means "the value of the function $f$ when the
+input is $x$." It's a more descriptive way to write $y$ in terms of
+$x$ and helps us deal with more complex expressions in calculus.
+
+For example, if: \[
+f(x) = 2x + 1,
+\] this tells us that: - The function is named $f$ - For every input
+$x$, the output is given by the rule $2x + 1$
+
+So $f(3) = 2(3) + 1 = 7$.\\
+This notation lets us plug in values, graph functions, and perform
+operations on them.
+
+In calculus, function notation is essential because we often study how
+$f(x)$ changes with $x$---especially as $x$ gets close to some
+value, which brings us to limits.

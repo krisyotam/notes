@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ID:         opposite-number-c-codewars
+:START:      2025-01-15
+:FINISH:
+:CERTAINTY:  certain
+:STATUS:     evergreen
+:IMPORTANCE: 6
+:PREVIEW:    CodeWars solution using additive inverse property in C
+:END:
+#+title: Opposite Number, C, CodeWars
+#+filetags: :c:codewars:algorithms:
+
+** ###### Problem Statement
+:PROPERTIES:
+:CUSTOM_ID: problem-statement
+:END:
+#+begin_example
+Very simple, given a number (integer / decimal / both depending on the language), find its opposite (additive inverse).
+
+Examples:
+
+1: -1
+14: -14
+-34: 34
+#+end_example
+
+** ###### Chosen Solution
+:PROPERTIES:
+:CUSTOM_ID: chosen-solution
+:END:
+Using the additive inverse property we know the following
+
+#+begin_example
+In the integers, every element x has a unique element -x such that:
+x + (-x) = 0
+#+end_example
+
+Now that we know that we can return the inverse of a number by
+multiplying it by -x.
+
+#+begin_src C
+int opposite(int number) 
+{
+  return -number; // use additive inverse property 
+}
+#+end_src
+
+[[https://www.codewars.com/kata/reviews/575d9b2389dcbca923000188/groups/68aa6a5c4e86241095c94767][Link
+To Solution on CodeWars]]

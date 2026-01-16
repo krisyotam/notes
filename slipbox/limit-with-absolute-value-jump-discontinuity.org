@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:         limit-with-absolute-value-jump-discontinuity
+:START:      2025-01-15
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     evergreen
+:IMPORTANCE: 7
+:PREVIEW:    Example of a limit that DNE due to jump discontinuity
+:END:
+#+title: Limit with Absolute Value - Jump Discontinuity
+#+filetags: :calculus:limits:
+
+*Example:* \[
+\lim_{x \to 3} \frac{|x - 3|}{x - 3}
+$$
+- From the left ($x < 3$), $|x - 3| = -(x - 3)$ → value = $-1$
+- From the right ($x > 3$), $|x - 3| = x - 3$ → value = $1$
+
+Since the two one-sided limits aren't equal, the limit *does not exist*.
+
+This is a classic example of a *jump discontinuity*, where the function
+abruptly switches values at a point.

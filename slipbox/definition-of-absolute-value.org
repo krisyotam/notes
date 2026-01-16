@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:         definition-of-absolute-value
+:START:      2025-01-15
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     evergreen
+:IMPORTANCE: 7
+:PREVIEW:    Mathematical definition of absolute value as distance from zero
+:END:
+#+title: Definition of Absolute Value
+#+filetags: :algebra:absolute-value:
+
+The absolute value of a number represents its distance from 0 on the
+number line, regardless of direction.
+
+It is defined piecewise as:
+$$
+|x| =
+\begin{cases}
+x, & \text{if } x \geq 0 \\
+-x, & \text{if } x < 0
+\end{cases}
+$$
+This means: - If $x$ is positive or zero, $|x| = x$ - If $x$ is
+negative, $|x| = -x$ (which makes it positive)
+
+Absolute value is often used in contexts involving: - Distance between
+numbers - Inequalities (e.g., $|x - a| < \delta$ in limits) -
+Piecewise definitions - Symmetry of graphs

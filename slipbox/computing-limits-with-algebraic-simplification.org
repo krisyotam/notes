@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:         computing-limits-with-algebraic-simplification
+:START:      2025-01-15
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     evergreen
+:IMPORTANCE: 7
+:PREVIEW:    Using algebraic simplification to evaluate indeterminate forms
+:END:
+#+title: Computing Limits with Algebraic Simplification
+#+filetags: :calculus:limits:
+
+When direct substitution leads to an indeterminate form like
+$\frac{0}{0}$, simplify the expression algebraically.
+
+*Example:* \[
+\lim_{x \to 3} \frac{x^2 - 9}{x - 3}
+$$
+Steps: 1. Factor the numerator: \[
+\frac{(x - 3)(x + 3)}{x - 3}
+\] 2. Cancel $(x - 3)$: \[
+x + 3
+\] 3. Plug in $x = 3$: \[
+3 + 3 = 6
+$$
+The simplification resolves the indeterminate form and reveals the
+limit.

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:         untitled
+:START:      2025-01-15
+:FINISH:
+:CERTAINTY:  possible
+:STATUS:     seed
+:IMPORTANCE: 1
+:PREVIEW:    Placeholder note
+:END:
+#+title: Untitled
+#+filetags:

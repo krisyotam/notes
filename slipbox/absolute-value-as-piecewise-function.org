@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID:         absolute-value-as-piecewise-function
+:START:      2025-01-15
+:FINISH:
+:CERTAINTY:  likely
+:STATUS:     evergreen
+:IMPORTANCE: 7
+:PREVIEW:    Converting absolute value expressions to piecewise form
+:END:
+#+title: Absolute Value as Piecewise Function
+#+filetags: :algebra:absolute-value:
+
+Given an expression like $|x - a|$, its piecewise form is:
+$$
+|x - a| =
+\begin{cases}
+x - a, & \text{if } x \geq a \\
+-(x - a), & \text{if } x < a
+\end{cases}
+$$
+--------------
+
+*** Example:
+:PROPERTIES:
+:CUSTOM_ID: example
+:END:
+Rewrite $f(x) = |x - 2|$ as a piecewise function:
+$$
+f(x) =
+\begin{cases}
+x - 2, & \text{if } x \geq 2 \\
+- (x - 2), & \text{if } x < 2
+\end{cases}
+=
+\begin{cases}
+x - 2, & x \geq 2 \\
+- x + 2, & x < 2
+\end{cases}
+$$
+This representation is useful when: - Solving equations involving
+$|x - a|$ - Graphing the function - Performing algebraic analysis
